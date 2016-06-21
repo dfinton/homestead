@@ -1,0 +1,7 @@
+### COPY THIS FILE TO "local-config.sh" and remove this line so that the first
+### line invokes the shell. Make sure to change the hostname to the actual
+### location where the charts host resides (CHARTS_HOSTNAME)
+
+#!/usr/bin/env bash
+
+export CHARTS_HOSTNAME=my-hostname.com
