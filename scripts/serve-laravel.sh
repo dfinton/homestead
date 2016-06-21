@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-pushd `dirname $0` > /dev/null
-SCRIPT_PATH=`pwd`
-popd > /dev/null
-
-source $SCRIPT_PATH/local-config.sh
-
 mkdir /etc/nginx/ssl 2>/dev/null
 
 PATH_SSL="/etc/nginx/ssl"
@@ -60,8 +54,8 @@ block="server {
     }
 
     location /charts/ {
-       proxy_set_header Host $CHARTS_HOSTNAME;
-       proxy_pass http://$CHARTS_HOSTNAME:80/gfx/$1/;
+       proxy_set_header Host REMEMBER_TO_CHANGE;
+       proxy_pass http://REMEMBER_TO_CHANGE:80/gfx/$1/;
     }
 
     location ~ /\.ht {
