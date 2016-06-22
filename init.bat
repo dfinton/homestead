@@ -1,6 +1,6 @@
 @echo off
 
-set homesteadRoot=%HOMEDRIVE%%HOMEPATH%\.homestead
+set homesteadRoot=%HOMEDRIVE%%HOMEPATH%\.homestead-0.3.3
 
 mkdir "%homesteadRoot%"
 
